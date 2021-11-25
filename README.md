@@ -1,2 +1,2 @@
-# Mp3playerBOT
+# MP3PlayerBOT
 บอทดิสคอร์ดเปิดเพลงจากไฟล์ mp3 ในเครื่อง
