@@ -4,13 +4,13 @@
 import discord
 from discord.ext import commands
 from asyncio import sleep 
-bot = commands.Bot(command_prefix="")
+bot = commands.Bot(command_prefix="play")
 
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Game('เรียก พี่พีเจ'))
-    print("P'PJ Ready for surprise N'Nuey!")
+    await bot.change_presence(activity=discord.Game(''))
+    print("MP3player ready!")
 
 @bot.command()
 async def พี่พีเจ(ctx):
@@ -18,8 +18,8 @@ async def พี่พีเจ(ctx):
             title="Mp3player", description="เล่นไฟล์ mp3 จากบอทดิสคอร์ด", color=0x71afe5)
     emBed.set_thumbnail(
             url="https://o.remove.bg/downloads/45b4ff7e-00c0-476d-90b3-0aadab121687/image-removebg-preview.png")
-    emBed.add_field(name="พิมพ์ เล่น แล้ววรรคตามด้วยชื่อเพลงที่มี",
-                        value='แค่คุณ ของขวัญ หวานเย็น อาจเพราะ เธอคือความฝัน อยากเจอ สาวเซี่ยงไฮ้ รักแรกพบ ฟ้า เธอทั้งนั้น นิโคติน รักเมียที่สุดในโลก เรื่องราวที่เราเขียน ให้ฉันดูแลเธอ หลงรัก รักฉันเพราะอะไร unfriend undo')
+    emBed.add_field(name="นำไฟล์ mp3 ใส่ในโฟลเดอร์",
+                        value='พิมพ์ play ตามด้วยชื่อไฟล์')
     emBed.set_footer(text="https://github.com/jiraphanz",
                          icon_url="https://avatars.githubusercontent.com/u/88519295?v=4")
     await ctx.channel.send(embed=emBed)
@@ -41,4 +41,4 @@ async def leave(ctx):
     await ctx.voice_client.disconnect()
 
 
-bot.run("OTAyNDQyNzg5OTgyMzIyNzAw.YXefVw.fkgY5TP9InEUMzvAnxDVRguuoQ4")
+bot.run("your token")
