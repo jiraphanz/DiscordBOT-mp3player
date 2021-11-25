@@ -1,9 +1,7 @@
-# 902442789982322700
-# OTAyNDQyNzg5OTgyMzIyNzAw.YXefVw.fkgY5TP9InEUMzvAnxDVRguuoQ4
-
 import discord
 from discord.ext import commands
 from asyncio import sleep 
+
 bot = commands.Bot(command_prefix="!")
 
 
